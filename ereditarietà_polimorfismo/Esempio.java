@@ -1,6 +1,5 @@
-package ereditarietà_polimorfismo;
-
-public class Esempio {
+public class Esempio 
+{
     
     public static void main(String[] args)
     {

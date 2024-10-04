@@ -1,5 +1,3 @@
-package ereditarietà_polimorfismo;
-
 public class Persona
 {
     protected String nome;

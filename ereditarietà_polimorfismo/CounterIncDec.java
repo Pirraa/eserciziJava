@@ -1,5 +1,3 @@
-package ereditarietà_polimorfismo;
-
 class Counter
 {
     protected int val;
