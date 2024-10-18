@@ -1,5 +1,5 @@
 
-class MainCounter
+public class MainCounter
 {
     public static void main(String[] args)
     {
@@ -13,7 +13,7 @@ class MainCounter
         c1 = new Counter();
         c2 = new Counter(5);
         c1.inc(); 
-        c2.inc(6);
+        c2.inc();
         n = c1.getValue() + c2.getValue();
         System.out.println(n);
     }

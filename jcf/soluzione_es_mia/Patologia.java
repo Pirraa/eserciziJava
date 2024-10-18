@@ -1,5 +1,4 @@
-package jcf.soluzione_es_mia;
-
+package soluzione_es_mia;
 public class Patologia 
 {
     private String nome;

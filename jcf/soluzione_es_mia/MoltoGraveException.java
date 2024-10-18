@@ -1,4 +1,4 @@
-package jcf.soluzione_es_mia;
+package soluzione_es_mia;
 
 public class MoltoGraveException extends Exception
 {

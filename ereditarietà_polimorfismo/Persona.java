@@ -1,12 +1,11 @@
 public class Persona
 {
     protected String nome;
-    protected int anni;
-    public Persona(String n, int a){ nome=n; anni=a;}
+    protected String cognome;
+    public Persona(String n, String c){ nome=n; cognome=c;}
     public void print()
     {
-        System.out.print("Mi chiamo " + nome);
-        System.out.println(" e ho " + anni + "anni");
+        System.out.print("Mi chiamo " + nome + cognome);
     }
 }
 
@@ -14,9 +13,9 @@ public class Persona
 class Studente extends Persona
 {
     protected int matr;
-    public Studente(String n, int a, int m)
+    public Studente(String n, String c, int m)
     {
-        super(n,a);
+        super(n,c);
         matr=m;
     }
     public void print()

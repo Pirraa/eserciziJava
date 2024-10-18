@@ -1,4 +1,3 @@
-package jcf;
 
 import java.util.*;
 

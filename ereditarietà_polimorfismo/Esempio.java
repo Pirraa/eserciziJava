@@ -19,11 +19,11 @@ public class Esempio
         System.out.println("Valore: "+n);
 
 
-        Persona p = new Persona("John",45);
-        Studente s = new Studente("Tom",20,156453);
-        p.print(); // stampa nome ed età
+        Persona p=new Persona("Mario", "Rossi");
+        Studente s=new Studente("Luca", "Bianchi", 12345);
+        ((Studente) p).print(); // stampa nome ed età
         s.print(); // stampa nome, età, matricola
         p=s; // Ok, per il subtyping
-        p.print(); // stampa nome, età, matricola perchè il tipo di istanza (non quello statico che è persona) è studente
+        ((Studente) p).print(); // stampa nome, età, matricola perchè il tipo di istanza (non quello statico che è persona) è studente
     }
 }

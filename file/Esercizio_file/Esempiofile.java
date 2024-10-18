@@ -4,6 +4,7 @@ public class Esempiofile {
     public static void main(String[] args){
         // Scrittura su file
         try{
+            @SuppressWarnings("unused")
             WriteLines wr = new WriteLines(args[0]);
         }
         catch(IOException e){
@@ -17,6 +18,7 @@ public class Esempiofile {
 
         // Lettura da file
         try{
+            @SuppressWarnings("unused")
             ReadFile rf = new ReadFile(args[0]);
         }
         catch(FileNotFoundException e){

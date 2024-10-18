@@ -1,6 +1,7 @@
 package Esercizio_call;
 
 public class Call {
+    @SuppressWarnings("unused")
     private String sender, receiver;
     private int start, stop;
 
