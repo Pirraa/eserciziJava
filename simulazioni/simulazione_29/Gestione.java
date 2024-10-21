@@ -94,6 +94,7 @@ public class Gestione
                 }
                 line=br.readLine();
             }
+            br.close();
         }catch(Exception e)
         {
             System.out.println(e);

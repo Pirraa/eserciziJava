@@ -2,7 +2,9 @@ package simulazioni.simulazione_29;
 
 public class Servizio 
 {
+    @SuppressWarnings("unused")
     private int codice;
+    @SuppressWarnings("unused")
     private double ore;
     private double costo;
 
