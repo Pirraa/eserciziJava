@@ -1,4 +1,4 @@
-public class BiCounter extends Counter
+public class BiCounter extends Counter2
 {
     public void dec()
     { val--; }

@@ -4,7 +4,7 @@ public class Esempio
     public static void main(String[] args)
     {
         int n;
-        Counter c1;
+        Counter2 c1;
         c1 = new BiCounter(); // Era c1 = new Counter() ma per polimorfismo posso fare anche questo assegnamento
         for (int i=0;i<150;i++)
         c1.inc();

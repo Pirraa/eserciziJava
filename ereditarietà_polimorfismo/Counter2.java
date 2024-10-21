@@ -1,10 +1,7 @@
-class Counter
+public class Counter2
 {
     protected int val;
-    public Counter(){ val = 0; }
-    public Counter(int i) {
-        //TODO Auto-generated constructor stub
-    }
+    public Counter2(){ val = 0; }
     public void reset()
     { val = 0; }
     public void inc()
