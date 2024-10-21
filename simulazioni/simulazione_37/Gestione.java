@@ -1,4 +1,4 @@
-package simulazione_37;
+package simulazioni.simulazione_37;
 import java.util.*;
 import java.io.*;
 

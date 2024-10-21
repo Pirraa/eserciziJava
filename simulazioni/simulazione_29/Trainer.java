@@ -1,4 +1,4 @@
-package simulazione_29;
+package simulazioni.simulazione_29;
 
 public class Trainer extends Dipendente
 {

@@ -1,4 +1,4 @@
-package simulazione_31;
+package simulazioni.simulazione_31;
 import java.util.*;
 
 public class Cliente 

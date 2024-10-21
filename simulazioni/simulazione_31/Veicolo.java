@@ -1,4 +1,4 @@
-package simulazione_31;
+package simulazioni.simulazione_31;
 
 public class Veicolo 
 {
