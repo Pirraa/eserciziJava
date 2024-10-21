@@ -58,44 +58,44 @@ public class Gestione
             System.out.println(c);
 
             try (Scanner sc = new Scanner(new File("clienti.txt"))) {
-                while (sc.hasNextLine()) {
+                while (sc.hasNextLine()) 
+                {
                     // Legge il nome del cliente
-                    String nome = sc.nextLine().trim();
-                    if (!nome.isEmpty()) {
-                        Cliente c = new Cliente(nome);
-                        clienti.add(c);
+                    String nome = sc.nextLine();
+                    Cliente c = new Cliente(nome);
+                    clienti.add(c);
+                    // Legge i noleggi per il cliente attuale
+                    while (sc.hasNextLine()) 
+                    {
+                        String line = sc.nextLine();
     
-                        // Legge i noleggi per il cliente attuale
-                        while (sc.hasNextLine()) {
-                            String line = sc.nextLine().trim();
-    
-                            // Se si trova una riga vuota o un nuovo nome di cliente, esce dal ciclo interno
-                            if (line.isEmpty() || Character.isLetter(line.charAt(0))) {
+                        // Se si trova una riga vuota o un nuovo nome di cliente, esce dal ciclo interno
+                        if (line.isEmpty()) {
                                 break;
-                            }
-    
-                            // Legge il codice e i giorni
-                            Scanner lineScanner = new Scanner(line);
-                            int codice = lineScanner.nextInt();
-                            int giorni = lineScanner.nextInt();
-    
-                            // Crea un nuovo noleggio e lo aggiunge al cliente
-                            Noleggio n = new Noleggio(codice, giorni);
-                            c.aggiungiNoleggio(n);
-    
-                            // Calcola il costo del noleggio
-                            //posso anche mettere il costo nela classe noleggio e passarlo al costruttore quando lo creo qui sopra
-                            //per ottenerlo uso la mappa fra il codice e il veicolo
-                            //se metto il costo dentro noleggio calcolo lì il costo moltiplicando con i giorni e lo confronto con il costo massimo sempre nella classe
-                            //faccio queste operazioni in un metodo della classe noleggio getcostomax
-                            double costo = map.get(codice).getCosto() * giorni;
-                            if (costo > c.getCostoMax()) {
-                                c.setCostoMax(costo);
-                            }
-                            lineScanner.close();
                         }
-                        sc.close();
+    
+                        // Legge il codice e i giorni
+                        Scanner lineScanner = new Scanner(line);
+                        int codice = lineScanner.nextInt();
+                        int giorni = lineScanner.nextInt();
+                        lineScanner.close();
+                        // Crea un nuovo noleggio e lo aggiunge al cliente
+                        Noleggio n = new Noleggio(codice, giorni);
+                        c.aggiungiNoleggio(n);
+    
+                        // Calcola il costo del noleggio
+                        //posso anche mettere il costo nela classe noleggio e passarlo al costruttore quando lo creo qui sopra
+                        //per ottenerlo uso la mappa fra il codice e il veicolo
+                        //se metto il costo dentro noleggio calcolo lì il costo moltiplicando con i giorni e lo confronto con il costo massimo sempre nella classe
+                        //faccio queste operazioni in un metodo della classe noleggio getcostomax
+                        double costo = map.get(codice).getCosto() * giorni;
+                        if (costo > c.getCostoMax()) {
+                            c.setCostoMax(costo);
+                        }
+                        lineScanner.close();
                     }
+                    sc.close();
+                  
                 }
                 sc.close();
             } catch (IOException e) {
