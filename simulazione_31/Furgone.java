@@ -2,9 +2,9 @@ package simulazione_31;
 
 public class Furgone extends Veicolo
 {
-    boolean rimorchio;
-    int num_posti;
-    boolean vano;
+    private boolean rimorchio;
+    private int num_posti;
+    private boolean vano;
 
     public Furgone(int codice, String targa, String modello, String marca, double costo,boolean rimorchio,int num_posti, boolean vano) 
     {

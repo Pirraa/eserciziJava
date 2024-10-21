@@ -84,11 +84,17 @@ public class Gestione
                             c.aggiungiNoleggio(n);
     
                             // Calcola il costo del noleggio
+                            //posso anche mettere il costo nela classe noleggio e passarlo al costruttore quando lo creo qui sopra
+                            //per ottenerlo uso la mappa fra il codice e il veicolo
+                            //se metto il costo dentro noleggio calcolo lì il costo moltiplicando con i giorni e lo confronto con il costo massimo sempre nella classe
+                            //faccio queste operazioni in un metodo della classe noleggio getcostomax
                             double costo = map.get(codice).getCosto() * giorni;
                             if (costo > c.getCostoMax()) {
                                 c.setCostoMax(costo);
                             }
+                            lineScanner.close();
                         }
+                        sc.close();
                     }
                 }
                 sc.close();
@@ -116,6 +122,7 @@ public class Gestione
                         noleggiTarga++;
                     }
             }
+            sc.close();
             System.out.println("Numero noleggi veicolo con targa"+targa +": "+noleggiTarga); 
         }catch(Exception e){
             System.out.println(e);

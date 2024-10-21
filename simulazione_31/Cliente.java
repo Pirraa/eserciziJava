@@ -5,7 +5,7 @@ public class Cliente
 {
     private String nome;
     List<Noleggio> noleggi;
-    double costoMax;
+    private double costoMax;
 
     public Cliente(String nome) 
     {
