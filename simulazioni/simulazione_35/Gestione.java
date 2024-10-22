@@ -78,6 +78,7 @@ public class Gestione
                 line=br.readLine();
                 line=br.readLine();
             }
+            br.close();
         }
         catch (IOException e)
         {
@@ -116,6 +117,7 @@ public class Gestione
                 giocatori.add(g);
                 line=br.readLine();
             }
+            br.close();
         }
         catch(Exception e)
         {

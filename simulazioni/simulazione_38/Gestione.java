@@ -61,6 +61,7 @@ public class Gestione
                 }
                 sc.nextLine();
             }
+            sc.close();
         }
         catch(IOException e)
         {
@@ -116,6 +117,7 @@ public class Gestione
                 }
                 line=br.readLine();
             }
+            br.close();
         }
         catch(Exception e)
         {
