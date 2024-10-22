@@ -94,8 +94,6 @@ public class Gestione
                         }
                         lineScanner.close();
                     }
-                    sc.close();
-                  
                 }
                 sc.close();
             } catch (IOException e) {
