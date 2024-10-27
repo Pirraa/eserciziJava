@@ -3,7 +3,7 @@ package simulazioni.simulazione_38;
 public class Veicoli 
 {
     private int codice;
-    String marca;
+    private String marca;
     private double lunghezza;
     private double larghezza;
     private int posti_letto;
