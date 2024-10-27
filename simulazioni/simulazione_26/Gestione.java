@@ -112,6 +112,7 @@ public class Gestione
                 }
                 line=rb.readLine();
             }
+            rb.close();
         }catch(Exception e){
             System.out.println(e);
         }
@@ -144,6 +145,7 @@ public class Gestione
             Studente r=(Studente)p;
             System.out.println(r.getUni());
         }
+        sc.close();
         
     }
 }
